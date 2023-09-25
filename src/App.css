@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+/* Header and navigation*/
+
+.nav-bar{
+  display: inline-block;
+  margin-right: 20px;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 5px;
+  background-color: lightblue;
+  cursor: pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a, ul {
+  text-decoration: none;
+  list-style: none;
+  color: black;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #e3ec90;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* FOOTER */
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 800px;
+}
+
+
+.footer-nav, .footer-contact, .footer-social {
+  flex: 1;
+  padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .footer-columns {
+    flex-direction: column; 
+    align-items: center; 
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+}
+img {
+  display: inline;
+  margin-right: 10px;
+  width: 500px;
+  height: auto;
+  align-items: center;
+}
+.footer-icon{
+  align-items: center;
+}
+
+/* MAIN CONTENT (MIDDLE */
+h2{
+  transform: scale(2);
+  font: sans-serif;
+}
+.eyebrow {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 150px 50px 150px;
+}
+.eyebrow button {
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: lightblue;
+}
+
+.dishes{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 50px;
+}
+
+.cardFood{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
