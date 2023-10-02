@@ -1,7 +1,6 @@
 import food from './imgs/food.png'
-import Header from './Header'
 
-export default function Main(){
+export default function Menu(){
   return(
     <main>
       

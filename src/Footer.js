@@ -1,6 +1,5 @@
 import footerLogo from './imgs/footerLogo.png'
 import './App.css';
-import Header from './Header';
 
 
 export default function Footer(){

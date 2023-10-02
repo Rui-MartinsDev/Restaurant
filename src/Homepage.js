@@ -1,11 +1,11 @@
 import Footer from "./Footer";
-import Header from "./Header";
-import Main from "./Main";
+import Menu from "./Menu";
 
 export default function Homepage() {
   return (
     <main>
-      <Main/>
+      <h1>HomePage Little Lemon</h1>
+      <Menu/>
       <Footer/>
     </main>
 
